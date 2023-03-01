@@ -1,5 +1,5 @@
 {
-    "name": "swow-cloud/skeleton-php",
+    "name": "swow-cloud/sizedwaitgroup",
     "description": "A skeleton repository for my packages",
     "keywords": ["php", "skeleton", "package"],
     "license": "MIT",
@@ -10,16 +10,17 @@
         }
     ],
     "require": {
-        "php": "^8.1.0"
+        "php": "^8.1.0",
+        "swow/swow": "^1.2"
     },
     "require-dev": {
-        "pestphp/pest": "^2.0.0",
+        "pestphp/pest": "^1.22",
         "phpstan/phpstan": "^1.9.11",
         "symfony/var-dumper": "^6.2.3"
     },
     "autoload": {
         "psr-4": {
-            "SwowCloud\\SkeletonPhp\\": "src/"
+            "SwowCloud\\SizedWaitGroup\\": "src/"
         }
     },
     "autoload-dev": {
@@ -27,7 +28,7 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
