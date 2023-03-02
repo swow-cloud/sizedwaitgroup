@@ -20,7 +20,7 @@ it('test sized wait groups', function () {
             echo Coroutine::getCurrent()->getId() . PHP_EOL;
         });
     }
-    $s->wait();
+    $s->Wait();
     echo "sleep 3" . PHP_EOL;
 });
 it('TestThrottling', function () {
@@ -39,7 +39,7 @@ it('TestThrottling', function () {
             }
         });
     }
-    $s->wait();
+    $s->Wait();
     expect('here')->toBe('here');
 });
 
